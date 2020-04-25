@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "673193403e73c8d540c40bfce1c3f7be",
+    "content-hash": "fa79d610036dd8d514d09298183576af",
     "packages": [
         {
             "name": "ankitpokhrel/tus-php",
@@ -2727,16 +2727,16 @@
         },
         {
             "name": "sanjabteam/sanjab",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanjabteam/sanjab.git",
-                "reference": "64ab531f5bd7c9f430e1992765d99185e569244e"
+                "reference": "7fae7e7cca8ce7b261352beb1ef5fdf419430674"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanjabteam/sanjab/zipball/64ab531f5bd7c9f430e1992765d99185e569244e",
-                "reference": "64ab531f5bd7c9f430e1992765d99185e569244e",
+                "url": "https://api.github.com/repos/sanjabteam/sanjab/zipball/7fae7e7cca8ce7b261352beb1ef5fdf419430674",
+                "reference": "7fae7e7cca8ce7b261352beb1ef5fdf419430674",
                 "shasum": ""
             },
             "require": {
@@ -2796,7 +2796,7 @@
                 "laravel",
                 "sanjab"
             ],
-            "time": "2020-04-18T14:48:45+00:00"
+            "time": "2020-04-25T20:12:58+00:00"
         },
         {
             "name": "silber/bouncer",
