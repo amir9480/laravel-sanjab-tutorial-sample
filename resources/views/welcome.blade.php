@@ -86,7 +86,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">این ابزار فوق العادس!</a>
+                    @foreach($categories as $category)
+                        <a href="#">{{ $category->name }}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
