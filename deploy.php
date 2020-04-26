@@ -7,8 +7,8 @@ set('application', 'test');
 set('default_timeout', 1200);
 set('http_user', 'laradock');
 set('writable_recursive', true);
-set('writable_mode', 'chown');
-set('keep_releases', 2);
+// set('writable_mode', 'chown');
+set('keep_releases', 3);
 
 set('repository', 'https://github.com/amir9480/laravel-sanjab-tutorial-sample.git');
 
@@ -21,13 +21,14 @@ add('shared_dirs', []);
 add('writable_dirs', []);
 
 host('amirtest.chickenkiller.com')
-    ->user('root')
+    ->user('laradock')
     ->port(2222)
     ->set('deploy_path', '/var/www/{{application}}');
 
 after('deploy:failed', 'deploy:unlock');
 
 before('deploy:symlink', 'artisan:migrate');
+after('deploy:symlink', 'artisan:cache:clear');
 
 desc('Installing vendors');
 task('deploy:vendors', function () {
